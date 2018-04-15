@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+    crossorigin="anonymous">
+  <title>Analyzing NBA Player Value</title>
+  <!-- Google Adsense -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-7456260305870315",
+      enable_page_level_ads: true
+    });
+  </script>
+  <!-- End Adsense -->
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <h1 class="text-center">Visualizing Advanced NBA Metrics</h1>
+      <div>
+        <canvas id="stats" width="400" height="400"></canvas>
+      </div>
+
+      <div>
+        <h3 class="text-center">Config</h3>
+        <div>
+          <h5 class="text-center mb-3">x-Axis</h5>
+          <select class="custom-select custom-select-sm mb-3" id="xSelect">
+            <option selected disabled>Select a Stat</option>
+          </select>
+        </div>
+        <div>
+          <h5 class="text-center mb-3">y-Axis</h5>
+          <select class="custom-select custom-select-sm mb-3" id="ySelect">
+            <option selected disabled>Select a Stat</option>
+          </select>
+        </div>
+        <h3 class="text-center">Filters</h3>
+        <div>
+          <h5 class="text-center mb-3">Team</h5>
+          <select class="custom-select custom-select-sm mb-3" id="teamSelect">
+            <option selected>All Teams</option>
+          </select>
+        </div>
+        <div>
+          <h5 class="text-center mb-3">Position</h5>
+          <select class="custom-select custom-select-sm mb-3" id="posSelect">
+            <option selected>All Positions</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+<!-- Chart -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"></script>
+<!-- Popper -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+  crossorigin="anonymous"></script>
+<!-- Data Config -->
+<script src="assets/players.js"></script>
+<script src="assets/chart.js"></script>
+<script src="assets/toggle.js"></script>
+
+</html>
