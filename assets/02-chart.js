@@ -131,12 +131,21 @@ const returnData = (players, xAxis, yAxis, xLabel, yLabel, xAbvr, yAbvr) => {
                 return value;
               }
             }
-          }
+          },
         }],
         xAxes: [{
           scaleLabel: {
             display: true,
             labelString: `${xLabel}`
+          },
+          ticks: {
+            callback: function (value, index, values) {
+              if (value > 1000) {
+                return `$${(value/1000000).toFixed(0)} M`
+              } else {
+                return value;
+              }
+            }
           }
         }]
       },
