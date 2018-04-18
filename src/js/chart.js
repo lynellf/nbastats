@@ -137,7 +137,7 @@
               },
               ticks: {
                 callback: function (value, index, values) {
-                  if (value > 1000) {
+                  if (value > 50000) {
                     return `$${(value / 1000000).toFixed(0)} M`
                   } else {
                     return value
