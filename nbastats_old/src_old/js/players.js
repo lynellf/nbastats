@@ -1,3 +1,4 @@
+//@ts-nocheck
 !(players = () => {
   const players = [
     [
