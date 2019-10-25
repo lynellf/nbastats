@@ -1,3 +1,4 @@
+//@ts-nocheck
 !(newChart = state => {
   // Selectors
   const xAxis = document.getElementById('xSelect')
