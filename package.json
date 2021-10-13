@@ -9,12 +9,20 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@xstate/react": "^1.6.1",
+    "chart.js": "^3.5.1",
+    "nba-greatest-players-list": "^1.0.0",
     "next": "11.1.2",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-chartjs-2": "^3.0.5",
+    "react-dom": "17.0.2",
+    "react-select": "^5.1.0",
+    "rxjs": "^7.4.0",
+    "xstate": "^4.25.0"
   },
   "devDependencies": {
     "@types/react": "17.0.27",
+    "@types/react-chartjs-2": "^2.5.7",
     "eslint": "8.0.0",
     "eslint-config-next": "11.1.2",
     "typescript": "4.4.3"

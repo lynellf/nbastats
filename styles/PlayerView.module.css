@@ -1,0 +1,39 @@
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.name {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.container > div {
+  width: 50%;
+}
+
+.career-table-row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.career-table-row > span {
+  border: thin dotted black;
+  min-width: 10%;
+  overflow: clip;
+  text-overflow: ellipsis;
+}
+
+.career-table-row > strong {
+  border: thin dotted black;
+  min-width: 10%;
+  overflow: clip;
+}
+
+.related-links {
+  display: flex;
+}
